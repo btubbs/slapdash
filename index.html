@@ -1,0 +1,50 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <title>Glance</title>
+  <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="css/main.css" type="text/css" media="screen">
+</head>
+<body>
+	
+	
+	
+	
+	
+	
+	<style>
+	#sortable { list-style-type: none; margin: 0; padding: 0; }
+	#sortable li { margin: 3px 3px 3px 0; padding: 1px; float: left; width: 100px; height: 90px; font-size: 4em; text-align: center; }
+	</style>
+	<script>
+	$(function() {
+		$( "#sortable" ).sortable();
+		$( "#sortable" ).disableSelection();
+	});
+	</script>
+
+
+<div class="demo">
+
+<ul id="sortable">
+	<li class="ui-state-default">1</li>
+	<li class="ui-state-default">2</li>
+	<li class="ui-state-default">3</li>
+	<li class="ui-state-default">4</li>
+	<li class="ui-state-default">5</li>
+	<li class="ui-state-default">6</li>
+	<li class="ui-state-default">7</li>
+	<li class="ui-state-default">8</li>
+	<li class="ui-state-default">9</li>
+	<li class="ui-state-default">10</li>
+	<li class="ui-state-default">11</li>
+	<li class="ui-state-default">12</li>
+</ul>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+<script src="js/dash.js"></script>
+</body>
+</html>
