@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+#tilegrid {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  clear: both;
+}
+
+body {
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+.tile {
+  margin: 20px 20px 0 0;
+  padding: 4px 8px;
+  float: left;
+  width: 150px;
+  height: 150px;
+  -webkit-box-shadow: 1px 1px 2px 2px #ddd;
+  -moz-box-shadow: 1px 1px 2px 2px #ddd;
+  box-shadow: 1px 1px 2px 2px #ddd;
+  border: 1px solid #ddd;
+  background: white;
+}
+
+.tile.x2 {
+  width: 320px;
+}
+
+.tile.y2 {
+  height: 320px;
+}
+
+.tile.x3 {
+  width: 490px;
+}
+
+.tile.y3 {
+  height: 490px;
+}
+
+.tile.x4 {
+  width: 660px;
+}
+
+.tile.y4 {
+  height: 660px;
+}
+
+.max4 {
+  max-width: 1340px;
+}
+
+#title {
+  float: left;
+}
+
+.nav-tabs .open .dropdown-toggle,
+.nav-pills .open .dropdown-toggle,
+.nav > li.dropdown.open.active > a:hover {
+  color: #ffffff;
+  background-color: #999999;
+  border-color: #999999;
+}

@@ -1,0 +1,75 @@
+// Variables
+
+$boxsize: 150px;
+$gutter: 20px;
+
+// don't let padding or borders throw off the grid.
+* { box-sizing: border-box; }
+
+#tilegrid { 
+  list-style-type: none; 
+  margin: 0; 
+  padding: 0; 
+  clear: both;
+}
+
+body {
+  padding-left: $gutter;
+  font-size: 15px;
+}
+
+.tile { 
+  margin: $gutter $gutter 0 0; 
+  padding: 4px 8px; 
+  float: left; 
+  width: $boxsize; 
+  height: $boxsize; 
+  -webkit-box-shadow:  1px 1px 2px 2px #ddd;
+  -moz-box-shadow:  1px 1px 2px 2px #ddd;
+  box-shadow: 1px 1px 2px 2px #ddd;
+  border: 1px solid #ddd;
+  background: white;
+  //cursor: move;
+}
+
+.tile.x2 {
+  width: $boxsize * 2 + $gutter;
+}
+
+.tile.y2 {
+  height: $boxsize * 2 + $gutter;
+}
+
+.tile.x3 {
+  width: $boxsize * 3 + $gutter * 2;
+}
+
+.tile.y3 {
+  height: $boxsize * 3 + $gutter * 2;
+}
+
+.tile.x4 {
+  width: $boxsize * 4 + $gutter * 3;
+}
+
+.tile.y4 {
+  height: $boxsize * 4 + $gutter * 3;
+}
+
+.max4 {
+  max-width: $boxsize * 8 + $gutter * 7;
+}
+
+#title {
+  float: left;
+}
+
+.nav-tabs .open .dropdown-toggle,
+.nav-pills .open .dropdown-toggle,
+.nav > li.dropdown.open.active > a:hover {
+  color: #ffffff;
+  background-color: #999999;
+  border-color: #999999;
+}
+
+
